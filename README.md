@@ -12,4 +12,9 @@ then print out a list of names.
 
 Press the `Return` key to exit the console application.
 
-Articles describing this project are forth-coming.
+How to use this project is described in the following articles:
+* [Initial Task Samples with .NET Core 2.0](https://jeremybytes.blogspot.com/2017/09/initial-task-samples-with-net-core-20.html) 
+* [Building a WebAPI Service with .NET Core 2.0](https://jeremybytes.blogspot.com/2017/09/buidling-webapi-service-with-net-core-20.html) 
+* [Consuming a WebAPI Service with .NET Core 2.0](https://jeremybytes.blogspot.com/2017/09/consuming-webapi-service-with-net-core.html) 
+
+More articles to come.
