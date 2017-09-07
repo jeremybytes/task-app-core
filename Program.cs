@@ -13,7 +13,7 @@ namespace CoreTaskApp
         {
             tokenSource = new CancellationTokenSource();
 
-            Console.WriteLine("One Moment Please (press 'x' to Cancel)");
+            Console.WriteLine("One Moment Please ('x' to Cancel, 'q' to Quit)");
 
             var repository = new PersonRepository();
             Task<List<Person>> peopleTask = repository.GetAsync(tokenSource.Token);
@@ -52,17 +52,20 @@ namespace CoreTaskApp
 
         private static void HandleExit()
         {
-            ExitLoop:
-            if (Console.ReadKey().Key == ConsoleKey.X)
-            {
-                tokenSource.Cancel();
-                goto ExitLoop;
-            }
-            else
-            {
-                Console.WriteLine("Waiting...");
-                goto ExitLoop;
-            }
+            while (true)
+                switch (Console.ReadKey().Key)
+                {
+                    case ConsoleKey.X:
+                        tokenSource.Cancel();
+                        break;
+                    case ConsoleKey.Q:
+                        Console.WriteLine();
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        Console.WriteLine("Waiting...");
+                        break;
+                }
         }
     }
 }
