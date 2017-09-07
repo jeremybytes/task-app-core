@@ -16,11 +16,11 @@ namespace CoreTaskApp
             Console.WriteLine("One Moment Please (press 'x' to Cancel)");
 
             var repository = new PersonRepository();
-            var peopleTask = repository.GetAsync(tokenSource.Token);
+            Task<List<Person>> peopleTask = repository.GetAsync(tokenSource.Token);
 
             peopleTask.ContinueWith(task =>
                 {
-                    var people = task.Result;
+                    List<Person> people = task.Result;
                     foreach(var person in people)
                         Console.WriteLine(person.ToString());
                     Environment.Exit(0);
