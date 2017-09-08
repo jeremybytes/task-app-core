@@ -16,5 +16,6 @@ How to use this project is described in the following articles:
 * [Initial Task Samples with .NET Core 2.0](https://jeremybytes.blogspot.com/2017/09/initial-task-samples-with-net-core-20.html) 
 * [Building a WebAPI Service with .NET Core 2.0](https://jeremybytes.blogspot.com/2017/09/buidling-webapi-service-with-net-core-20.html) 
 * [Consuming a WebAPI Service with .NET Core 2.0](https://jeremybytes.blogspot.com/2017/09/consuming-webapi-service-with-net-core.html) 
+* [Using Task with .NET Core 2.0: Success, Error, Cancellation](https://jeremybytes.blogspot.com/2017/09/using-task-with-net-core-20-success.html) 
 
 More articles to come.
